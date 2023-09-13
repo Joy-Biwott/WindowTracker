@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 
-export default function WindowTracker({isToggle}){
+export default function WindowTracker({innerWidth, isToggle}){
     return(
         <div>
-            {isToggle && <h3>The width is: {window.innerWidth}</h3>}
+            {isToggle && <h3>The width is: {innerWidth}</h3>}
         </div>
     )
 }
